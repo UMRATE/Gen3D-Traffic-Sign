@@ -26,7 +26,7 @@ This repository is intended to house the raw data and code for the proposed meth
        - Identify roads and place traffic signs in a predefined order.
        - Position cameras and generate mask images of the camera's field of view using raycasting.
        - Output synthetic images with traffic sign annotations.
-  - ![City Scene](city_scene.png)
+  - ![City Scene](assets/city_scene.jpg)
 
 - **Synthetic Dataset Usage**:
   - The generated synthetic dataset can be used to train the **YOLOv8** model. Refer to the official documentation: [https://docs.ultralytics.com/zh](https://docs.ultralytics.com/zh).
