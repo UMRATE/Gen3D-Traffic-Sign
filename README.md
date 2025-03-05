@@ -16,23 +16,21 @@ This research proposes a universal approach to automated traffic sign management
 </div>
   
 ## Repository Contents
-This repository is intended to house the raw data and code for the proposed methodology, including:
+This repository is intended to house the code for the proposed methodology, including:
 - **Traffic Sign Generation**: Scripts to identify roads in a virtual environment and generate traffic signs according to the defined workflow.
 - **Camera Placement and Mask Generation**: Code to position cameras and generate mask images using raycasting.
 - **Format Conversion Scripts**: Tools for converting data into compatible formats.
 - **3D Semantic Point Cloud Processing**: Scripts for generating, classifying, and localizing traffic signs in a 3D semantic point cloud.
 
 ### Key Components
-- **Scripts**: 
-  - The first two scripts are written in **C#** and designed to run in a virtual engine. This study uses **Unity**, though adaptation to other engines is possible.
-  - **Setup**:
-    1. Import the city scene from the `Assets` folder (as shown below).
-    2. Import the provided scripts.
-    3. Tag road objects as `Road` in the scene.
-    4. Run the scripts to:
-       - Identify roads and place traffic signs in a predefined order.
-       - Position cameras and generate mask images of the camera's field of view using raycasting.
-       - Output synthetic images with traffic sign annotations.
+- **Traffics Sign Synthetic Dataset Generation**: The DatasetGenerator are written in **C#** and designed to run in a unreal engine. **Unity** was used in this study, specific steps are as follows:
+  1. Import the city scene from the `Unity Asset Store` (as shown Fig. 2). Refer to the official website: [Unity Asset Store](https://assetstore.unity.com/?srsltid=AfmBOopX2Y6pVpbDR0U101dbc8TpX8v4A-gY8tA5f4f-Qa6QdKLMuj3K)
+  2. Import the provided scripts.
+  3. Tag road objects as `Road` in the scene.
+  4. Run the scripts to:
+     Identify roads and place traffic signs in a predefined order.
+     Position cameras and generate mask images of the camera's field of view using raycasting.
+     Output synthetic images with traffic sign annotations.
 <div style="width: 600px; margin: 0 auto; text-align: center;">
   <img src="city_scene.png" alt="City Scene" width="300">
   <div style="margin-top: 10px;">
@@ -42,9 +40,9 @@ This repository is intended to house the raw data and code for the proposed meth
 </div>
 
 - **Synthetic Dataset Usage**:
-  - The generated synthetic dataset can be used to train the **YOLOv8** model. Refer to the official documentation: [https://docs.ultralytics.com/zh](https://docs.ultralytics.com/zh).
+  - The generated synthetic dataset can be used to train the **YOLOv8** model. Refer to the official website: [https://docs.ultralytics.com/zh](https://docs.ultralytics.com/zh).
 
-- **Real-World Application**:
+- **Traffic Sign Localization**:
   - Videos captured by a **DJI drone** are processed for traffic sign recognition.
   - The reconstructed 3D point cloud from **Metashape** undergoes semantic segmentation to obtain precise geospatial coordinates of traffic signs.
 <div style="width: 600px; margin: 0 auto; text-align: center;">
@@ -59,7 +57,7 @@ This repository is intended to house the raw data and code for the proposed meth
 For a step-by-step guide, refer to the accompanying paper. As the manuscript is currently under review, detailed information will be updated later.
 
 ## Notes
-- Large files (e.g., `ImagetoUTM/point cloud.ply`, 705.58 MB) are excluded due to GitHub's file size limit. These can be accessed via [cloud storage link](#) (to be updated).
+- Large files are excluded due to GitHub's file size limit. These can be accessed via [cloud storage link](#) (to be updated).
 
 ## Contact
 For questions or contributions, feel free to open an issue or contact the repository maintainers.
