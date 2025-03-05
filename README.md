@@ -26,7 +26,7 @@ This repository is intended to house the raw data and code for the proposed meth
        - Identify roads and place traffic signs in a predefined order.
        - Position cameras and generate mask images of the camera's field of view using raycasting.
        - Output synthetic images with traffic sign annotations.
-  - <img src="city_scene.jpg" alt="City Scene" width="500">
+  - <img src="city_scene.png" alt="City Scene" width="500">
 
 - **Synthetic Dataset Usage**:
   - The generated synthetic dataset can be used to train the **YOLOv8** model. Refer to the official documentation: [https://docs.ultralytics.com/zh](https://docs.ultralytics.com/zh).
@@ -34,7 +34,7 @@ This repository is intended to house the raw data and code for the proposed meth
 - **Real-World Application**:
   - Videos captured by a **DJI drone** are processed for traffic sign recognition.
   - The reconstructed 3D point cloud from **Metashape** undergoes semantic segmentation to obtain precise geospatial coordinates of traffic signs.
-  - <img src="3D_point_cloud.jpg" alt="3D Point Cloud" width="500">
+  - <img src="3D_point_cloud.png" alt="3D Point Cloud" width="500">
 
 ### Detailed Workflow
 For a step-by-step guide, refer to the accompanying paper. As the manuscript is currently under review, detailed information will be updated later.
