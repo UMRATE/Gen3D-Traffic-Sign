@@ -8,10 +8,8 @@ This research proposes a universal approach to automated traffic sign management
 3. **3D Semantic Reconstruction**: Photogrammetry is employed to reconstruct 3D models, integrated with detection masks to generate, classify, and localize traffic signs within a 3D semantic point cloud.
 4. **Geospatial Alignment**: Camera trajectories are combined with real-world Global Navigation Satellite System (GNSS) signals to enhance the geospatial accuracy of sign localization.
 <div style="text-align: center;">
-  <figure>
-    <img src="overview.png" alt="Overview" width="400">
-    <figcaption style="margin-top: 10px;">Fig. 1. Workflow of the proposed DL and photogrammetry-integrated approach</figcaption>
-  </figure>
+  <img src="overview.png" alt="Overview" width="500">
+  <p style="margin-top: 10px;">Fig. 1. Workflow of the proposed DL and photogrammetry-integrated approach</p>
 </div>
   
 ## Repository Contents
