@@ -24,13 +24,13 @@ This repository is intended to house the code for the proposed methodology, incl
 
 ### Key Components
 - **Traffics Sign Synthetic Dataset Generation**: The DatasetGenerator are written in **C#** and designed to run in a unreal engine. **Unity** was used in this study, specific steps are as follows:
-  1. Import the city scene from the `Unity Asset Store` (as shown Fig. 2). Refer to the official website: [Unity Asset Store](https://assetstore.unity.com/?srsltid=AfmBOopX2Y6pVpbDR0U101dbc8TpX8v4A-gY8tA5f4f-Qa6QdKLMuj3K)
-  2. Import the provided scripts.
-  3. Tag road objects as `Road` in the scene.
-  4. Run the scripts to:
-     Identify roads and place traffic signs in a predefined order.
-     Position cameras and generate mask images of the camera's field of view using raycasting.
-     Output synthetic images with traffic sign annotations.
+  Import the city scene from the `Unity Asset Store` (as shown Fig. 2). Refer to the official website: [Unity Asset Store](https://assetstore.unity.com/?srsltid=AfmBOopX2Y6pVpbDR0U101dbc8TpX8v4A-gY8tA5f4f-Qa6QdKLMuj3K)
+  Import the provided scripts.
+  Tag road objects as `Road` in the scene.
+  Run the scripts to:
+   - Identify roads and place traffic signs in a predefined order.
+   - Position cameras and generate mask images of the camera's field of view using raycasting.
+   - Output synthetic images with traffic sign annotations.
 <div style="width: 600px; margin: 0 auto; text-align: center;">
   <img src="city_scene.png" alt="City Scene" width="300">
   <div style="margin-top: 10px;">
@@ -40,11 +40,11 @@ This repository is intended to house the code for the proposed methodology, incl
 </div>
 
 - **Synthetic Dataset Usage**:
-  - The generated synthetic dataset can be used to train the **YOLOv8** model. Refer to the official website: [https://docs.ultralytics.com/zh](https://docs.ultralytics.com/zh).
+  The generated synthetic dataset can be used to train the **YOLOv8** model. Refer to the official website: [https://docs.ultralytics.com/zh](https://docs.ultralytics.com/zh).
 
 - **Traffic Sign Localization**:
-  - Videos captured by a **DJI drone** are processed for traffic sign recognition.
-  - The reconstructed 3D point cloud from **Metashape** undergoes semantic segmentation to obtain precise geospatial coordinates of traffic signs.
+  Videos captured by a **DJI drone** are processed for traffic sign recognition.
+  The reconstructed 3D point cloud from **Metashape** undergoes semantic segmentation to obtain precise geospatial coordinates of traffic signs.
 <div style="width: 600px; margin: 0 auto; text-align: center;">
   <img src="3D_point_cloud.png" alt="3D Point Cloud" width="300">
   <div style="margin-top: 10px;">
@@ -57,7 +57,7 @@ This repository is intended to house the code for the proposed methodology, incl
 For a step-by-step guide, refer to the accompanying paper. As the manuscript is currently under review, detailed information will be updated later.
 
 ## Notes
-- Large files are excluded due to GitHub's file size limit. These can be accessed via [cloud storage link](#) (to be updated).
+Large files are excluded due to GitHub's file size limit. These can be accessed via [cloud storage link](#) (to be updated).
 
 ## Contact
 For questions or contributions, feel free to open an issue or contact the repository maintainers.
