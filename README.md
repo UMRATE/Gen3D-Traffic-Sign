@@ -33,8 +33,8 @@ This repository is intended to house the raw data and code for the proposed meth
 
 - **Real-World Application**:
   - Videos captured by a **DJI drone** are processed for traffic sign recognition.
-  - The reconstructed 3D model from **Metashape** undergoes semantic segmentation to obtain precise geospatial coordinates of traffic signs (as shown below).
-  - **Screenshot**: *(Insert 3D model image here; upload an image to the repository and link it, e.g., `![3D Model](assets/3d_model.png)`)*
+  - The reconstructed 3D point cloud from **Metashape** undergoes semantic segmentation to obtain precise geospatial coordinates of traffic signs.
+[3D point cloud](assets/3D point cloud.jpg)
 
 ### Detailed Workflow
 For a step-by-step guide, refer to the accompanying paper. As the manuscript is currently under review, detailed information will be updated later.
