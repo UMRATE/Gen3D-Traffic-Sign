@@ -9,7 +9,7 @@ This research proposes a universal approach to automated traffic sign management
 4. **Geospatial Alignment**: Camera trajectories are combined with real-world Global Navigation Satellite System (GNSS) signals to enhance the geospatial accuracy of sign localization.
 <div style="text-align: center;">
   <figure>
-    <img src="overview.jpg" alt="Overview" width="500">
+    <img src="overview.png" alt="Overview" width="500">
     <figcaption>Fig. 1. Workflow of the proposed DL and photogrammetry-integrated approach</figcaption>
   </figure>
 </div>
