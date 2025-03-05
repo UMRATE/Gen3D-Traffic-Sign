@@ -7,7 +7,7 @@ This research proposes a universal approach to automated traffic sign management
 2. **Deep Learning-Based Detection**: Synthetic images are utilized to train deep learning models for traffic sign detection, with studies conducted to optimize recognition performance using synthetic data.
 3. **3D Semantic Reconstruction**: Photogrammetry is employed to reconstruct 3D models, integrated with detection masks to generate, classify, and localize traffic signs within a 3D semantic point cloud.
 4. **Geospatial Alignment**: Camera trajectories are combined with real-world Global Navigation Satellite System (GNSS) signals to enhance the geospatial accuracy of sign localization.
-<div style="text-align: center;">
+<div style="width: 600px; margin: 0 auto; text-align: center;">
   <img src="overview.png" alt="Overview" width="500">
   <div style="margin-top: 10px;">
     <span style="display: block;">Fig. 1.</span>
