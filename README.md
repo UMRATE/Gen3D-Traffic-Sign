@@ -1,4 +1,4 @@
-# TSM_code: Automated Traffic Sign Management
+# Generalized traffic sign recognition and localization through synthetic data generation and 3D semantic reconstruction
 
 ## Overview
 This research proposes a universal approach to automated traffic sign management by developing synthetic data generation and 3D semantic reconstruction techniques. The goal is to create a highly automated and versatile solution for traffic sign inventory management. The workflow is outlined as follows:
