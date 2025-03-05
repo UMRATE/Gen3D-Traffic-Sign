@@ -7,7 +7,12 @@ This research proposes a universal approach to automated traffic sign management
 2. **Deep Learning-Based Detection**: Synthetic images are utilized to train deep learning models for traffic sign detection, with studies conducted to optimize recognition performance using synthetic data.
 3. **3D Semantic Reconstruction**: Photogrammetry is employed to reconstruct 3D models, integrated with detection masks to generate, classify, and localize traffic signs within a 3D semantic point cloud.
 4. **Geospatial Alignment**: Camera trajectories are combined with real-world Global Navigation Satellite System (GNSS) signals to enhance the geospatial accuracy of sign localization.
-  - <img src="overview.png" alt="Overview" width="500">
+<div style="text-align: center;">
+  <figure>
+    <img src="overview.jpg" alt="Overview" width="500">
+    <figcaption>Fig. 1. Workflow of the proposed DL and photogrammetry-integrated approach</figcaption>
+  </figure>
+</div>
   
 ## Repository Contents
 This repository is intended to house the raw data and code for the proposed methodology, including:
@@ -27,7 +32,7 @@ This repository is intended to house the raw data and code for the proposed meth
        - Identify roads and place traffic signs in a predefined order.
        - Position cameras and generate mask images of the camera's field of view using raycasting.
        - Output synthetic images with traffic sign annotations.
-  - <img src="city_scene.png" alt="City Scene" width="500">
+<img src="city_scene.png" alt="City Scene" width="500">
 
 - **Synthetic Dataset Usage**:
   - The generated synthetic dataset can be used to train the **YOLOv8** model. Refer to the official documentation: [https://docs.ultralytics.com/zh](https://docs.ultralytics.com/zh).
