@@ -1,9 +1,17 @@
-# Generalized traffic sign recognition and localization through synthetic data generation and 3D semantic reconstruction
+# Generalized Traffic Sign Recognition and Localization through Synthetic Data Generation and 3D Semantic Reconstruction
+
+## Table of Contents
+- [Overview](#overview)
+- [Repository Contents](#repository-contents)
+  - [Key Components](#key-components)
+  - [Detailed Workflow](#detailed-workflow)
+- [Notes](#notes)
+- [Contact](#contact)
 
 ## Overview
-This research proposes a universal approach to automated traffic sign management by developing synthetic data generation and 3D semantic reconstruction techniques. The goal is to create a highly automated and versatile solution for traffic sign inventory management. The workflow is outlined as follows:
+This research introduces a versatile, automated approach to traffic sign management through synthetic data generation and 3D semantic reconstruction. The workflow is outlined as follows:
 
-1. **Synthetic Data Generation**: A virtual reality platform is prototyped to automatically generate a large-scale dataset of synthetic traffic sign images with precise annotations.
+1. **Synthetic Data Generation**: A virtual reality platform generates a large-scale dataset of annotated synthetic traffic sign images automatically.
 2. **Deep Learning-Based Detection**: Synthetic images are utilized to train deep learning models for traffic sign detection, with studies conducted to optimize recognition performance using synthetic data.
 3. **3D Semantic Reconstruction**: Photogrammetry is employed to reconstruct 3D models, integrated with detection masks to generate, classify, and localize traffic signs within a 3D semantic point cloud.
 4. **Geospatial Alignment**: Camera trajectories are combined with real-world Global Navigation Satellite System (GNSS) signals to enhance the geospatial accuracy of sign localization.
@@ -18,7 +26,7 @@ This research proposes a universal approach to automated traffic sign management
 </table>
   
 ## Repository Contents
-This repository is intended to house the code for the proposed methodology, including:
+This repository contains code for the proposed methodology, including:
 - **Traffic Sign Generation**: Scripts to identify roads in a virtual environment and generate traffic signs according to the defined workflow.
 - **Camera Placement and Mask Generation**: Code to position cameras and generate mask images using raycasting.
 - **Format Conversion Scripts**: Tools for converting data into compatible formats.
@@ -59,7 +67,7 @@ This repository is intended to house the code for the proposed methodology, incl
 For a step-by-step guide, refer to the accompanying paper. As the manuscript is currently under review, detailed information will be updated later.
 
 ## Notes
-Large files are excluded due to GitHub's file size limit. These can be accessed via [cloud storage link](#) (to be updated).
+Due to GitHub's file size restrictions, Large files are hosted separately and will be accessible via a [cloud storage link](#) (to be updated).
 
 ## Contact
 For questions or contributions, feel free to open an issue or contact the repository maintainers.
