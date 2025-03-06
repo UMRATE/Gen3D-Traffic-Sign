@@ -39,7 +39,7 @@ This repository is intended to house the code for the proposed methodology, incl
 
 - **Traffic Sign Localization**:
   Videos captured by a **DJI drone** are processed for traffic sign recognition.
-  The reconstructed 3D point cloud from **Metashape** undergoes semantic segmentation to obtain precise geospatial coordinates of traffic signs.
+  The 3D point cloud as shown in Fig 3 reconstructed from [Metashape](https://www.agisoft.com/) undergoes semantic segmentation to obtain precise geospatial coordinates of traffic signs.
     <table>
       <tr>
         <td align="center">
