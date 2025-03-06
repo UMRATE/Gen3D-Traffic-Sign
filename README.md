@@ -25,10 +25,10 @@ This repository is intended to house the code for the proposed methodology, incl
 - **3D Semantic Point Cloud Processing**: Scripts for generating, classifying, and localizing traffic signs in a 3D semantic point cloud.
 
 ### Key Components
-- **Traffics Sign Synthetic Dataset Generation**: The DatasetGenerator are written in **C#** and designed to run in a unreal engine. **Unity** was used in this study, specific steps are as follows:
-  - Import the city scene from the `Unity Asset Store` (as shown Fig. 2). Refer to the official website: [Unity Asset Store](https://assetstore.unity.com/?srsltid=AfmBOopX2Y6pVpbDR0U101dbc8TpX8v4A-gY8tA5f4f-Qa6QdKLMuj3K)
-  - Import the provided scripts.
-  - Tag road objects as `Road` in the scene.
+- **Traffics Sign Synthetic Dataset Generation**: The DatasetGenerator are written in **C#** and designed to run in a unreal engine. [Unity](https://unity.com/cn) was used in this study, specific steps are as follows:
+  - Import the city scene (Fig 2) from the [Unity Asset Store](https://assetstore.unity.com/?srsltid=AfmBOopX2Y6pVpbDR0U101dbc8TpX8v4A-gY8tA5f4f-Qa6QdKLMuj3K)
+  - Import the provided DatasetGenerator scripts.
+  - Tag road objects as `Road` in the city scene.
   Run the scripts to:
     - Identify roads and place traffic signs in a predefined order.
     - Position cameras and generate mask images of the camera's field of view using raycasting.
