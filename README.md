@@ -14,6 +14,16 @@ This research proposes a universal approach to automated traffic sign management
     <span style="display: block;">Workflow of the proposed DL and photogrammetry-integrated approach</span>
   </div>
 </div>
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="overview.png" alt="overview" width="800">
+      <br>
+      Fig 1. Workflow of the proposed DL and photogrammetry-integrated approach
+    </td>
+  </tr>
+</table>
   
 ## Repository Contents
 This repository is intended to house the code for the proposed methodology, including:
@@ -38,20 +48,20 @@ This repository is intended to house the code for the proposed methodology, incl
 - **Traffic Sign Localization**:
   Videos captured by a **DJI drone** are processed for traffic sign recognition.
   The reconstructed 3D point cloud from **Metashape** undergoes semantic segmentation to obtain precise geospatial coordinates of traffic signs.
-      <table>
-        <tr>
-          <td align="center">
-            <img src="city_scene.png" alt="City Scene" height="250">
-            <br>
-            Fig 2. Pre-constructed virtual city model
-          </td>
-          <td align="center">
-            <img src="3D_point_cloud.png" alt="3D Point Cloud" height="250">
-            <br>
-            Fig 3. 3D point cloud reconstruction
-          </td>
-        </tr>
-      </table>
+    <table>
+      <tr>
+        <td align="center">
+          <img src="city_scene.png" alt="City Scene" height="250">
+          <br>
+          Fig 2. Pre-constructed virtual city model
+        </td>
+        <td align="center">
+          <img src="3D_point_cloud.png" alt="3D Point Cloud" height="250">
+          <br>
+          Fig 3. 3D point cloud reconstruction
+        </td>
+      </tr>
+    </table>
 
 ### Detailed Workflow
 For a step-by-step guide, refer to the accompanying paper. As the manuscript is currently under review, detailed information will be updated later.
