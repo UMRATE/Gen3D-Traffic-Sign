@@ -33,7 +33,7 @@ This repository is intended to house the code for the proposed methodology, incl
    - Output synthetic images with traffic sign annotations.
 
 - **Synthetic Dataset Usage**:
-  The generated synthetic dataset can be used to train the **YOLOv8** model. Refer to the official website: [https://docs.ultralytics.com/zh](https://docs.ultralytics.com/zh).
+  The generated synthetic dataset can be used to train the **YOLOv8** model. Refer to the official website: [ultralytics YOLO Vision](https://docs.ultralytics.com/zh).
 
 - **Traffic Sign Localization**:
   Videos captured by a **DJI drone** are processed for traffic sign recognition.
