@@ -41,12 +41,12 @@ This repository is intended to house the code for the proposed methodology, incl
 <table>
   <tr>
     <td align="center">
-      <img src="city_scene.png" alt="City Scene" high="200">
+      <img src="city_scene.png" alt="City Scene" hight="200">
       <br>
       Fig. 2. Pre-constructed virtual city models with various skyboxes
     </td>
     <td align="center">
-      <img src="3D_point_cloud.png" alt="3D Point Cloud" high="200">
+      <img src="3D_point_cloud.png" alt="3D Point Cloud" hight="200">
       <br>
       Fig. 3. 3D point cloud reconstruction
     </td>
