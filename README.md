@@ -45,7 +45,7 @@ This repository is intended to house the code for the proposed methodology, incl
     <p>Fig. 2.</p>
     <p>Pre-constructed virtual city models with various skyboxes</p>
   </div>
-</center>
+</center> 
 
 - **Synthetic Dataset Usage**:
   The generated synthetic dataset can be used to train the **YOLOv8** model. Refer to the official website: [https://docs.ultralytics.com/zh](https://docs.ultralytics.com/zh).
