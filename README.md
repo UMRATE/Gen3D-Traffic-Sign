@@ -31,35 +31,6 @@ This repository is intended to house the code for the proposed methodology, incl
    - Identify roads and place traffic signs in a predefined order.
    - Position cameras and generate mask images of the camera's field of view using raycasting.
    - Output synthetic images with traffic sign annotations.
-<div style="width: 600px; margin: 0 auto; text-align: center;">
-  <img src="city_scene.png" alt="City Scene" width="300">
-  <div style="margin-top: 10px;">
-    <span style="display: block;">Fig. 2.</span>
-    <span style="display: block;">Pre-constructed virtual city models with various skyboxes</span>
-  </div>
-</div>
-
-<center>
-  <img src="city_scene.png" alt="City Scene" width="300">
-  <div>
-    <p>Fig. 2.</p>
-    <p>Pre-constructed virtual city models with various skyboxes</p>
-  </div>
-</center> 
-
-| ![City Scene](city_scene.png) |
-|:-----------------------------:|
-| Fig. 2.                       |
-| Pre-constructed virtual city models with various skyboxes |
-
-
-<div style="margin-left: 50px;">
-  <img src="city_scene.png" alt="City Scene" width="300">
-  <div>
-    <span style="display: block;">Fig. 2.</span>
-    <span style="display: block;">Pre-constructed virtual city models with various skyboxes</span>
-  </div>
-</div>
 
 - **Synthetic Dataset Usage**:
   The generated synthetic dataset can be used to train the **YOLOv8** model. Refer to the official website: [https://docs.ultralytics.com/zh](https://docs.ultralytics.com/zh).
@@ -67,6 +38,13 @@ This repository is intended to house the code for the proposed methodology, incl
 - **Traffic Sign Localization**:
   Videos captured by a **DJI drone** are processed for traffic sign recognition.
   The reconstructed 3D point cloud from **Metashape** undergoes semantic segmentation to obtain precise geospatial coordinates of traffic signs.
+  | ![City Scene](city_scene.png) |
+  |:-----------------------------:|
+  | Fig. 2. Pre-constructed virtual city models with various skyboxes |
+  
+  | ![City Scene](city_scene.png) | ![3D Point Cloud](3D_point_cloud.png) |
+  |:-----------------------------:|:-------------------------------------:|
+  | Fig. 2. Pre-constructed virtual city models with various skyboxes | Fig. 3. 3D point cloud reconstruction |
 <div style="width: 600px; margin: 0 auto; text-align: center;">
   <img src="3D_point_cloud.png" alt="3D Point Cloud" width="300">
   <div style="margin-top: 10px;">
