@@ -51,12 +51,12 @@ This repository contains code for the proposed methodology, including:
     <table>
       <tr>
         <td align="center">
-          <img src="city_scene.png" alt="City Scene" height="250">
+          <img src="city_scene.png" alt="City Scene" width="350">
           <br>
           Fig 2. Pre-constructed virtual city model
         </td>
         <td align="center">
-          <img src="3D_point_cloud.png" alt="3D Point Cloud" height="250">
+          <img src="3D_point_cloud.png" alt="3D Point Cloud" width="350">
           <br>
           Fig 3. 3D point cloud reconstruction
         </td>
