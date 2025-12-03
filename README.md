@@ -51,7 +51,7 @@ This repository contains code for the proposed methodology, including:
     <table>
       <tr>
         <td align="center">
-          <img src="city_scene.png" alt="City Scene" width="350">
+          <img src="city_scene.png" alt="City Scene" width="340">
           <br>
           Fig 2. Pre-constructed virtual city model
         </td>
