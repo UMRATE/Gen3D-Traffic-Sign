@@ -64,7 +64,53 @@ This repository contains code for the proposed methodology, including:
     </table>
 
 ### Detailed Workflow
-For a step-by-step guide, refer to the accompanying paper. As the manuscript is currently under review, detailed information will be updated later.
+A complete step-by-step workflow for running the synthetic environment is summarized below. Full methodological details will be provided once the accompanying manuscript completes peer review.
+
+1. Preparing the Virtual Environment
+
+To execute the DatasetGenerator scripts, a Unity project must be set up with a compatible 3D city model.
+
+Create a new Unity project.
+
+Import the city scene from the Sketchfab into Unity.
+
+Import the DatasetGenerator folder from this repository into the Unity Assets/ directory.
+
+Drag the DatasetGenerator scripts into the scene hierarchy.
+
+Tag all road surfaces as Road to enable the automatic road-identification module.
+
+Place the 3D traffic sign prefabs (from Sketchfab or your licensed sources) under a dedicated folder such as Assets/Signs/.
+
+Once this setup is complete, the generator will automatically:
+
+Parse the road network
+
+Place traffic signs following predefined rules
+
+Deploy virtual cameras
+
+Generate RGB images and segmentation masks using raycasting
+
+2. Running the DatasetGenerator
+
+After configuring the scene:
+Press Play.
+Unity will simulate the environment and continuously generate annotated images into the specified output directory.
+
+3. Training the Detection Model
+
+The exported synthetic dataset can then be used directly with YOLOv8.
+Annotation follows the standard YOLO format (class x_center y_center width height).
+Training scripts and configs are included in the training/ folder.
+
+4. 3D Reconstruction and Semantic Integration
+
+Real-world UAV videos are processed via Metashape to reconstruct a dense point cloud.
+The YOLOv8 predictions are then projected into the 3D structure to produce a semantic point cloud, followed by:
+Class refinement
+3D clustering
+Sign localization
 
 ## Notes
 Due to GitHub's file size restrictions, Large files are hosted separately and will be accessible via a [cloud storage link](#) (to be updated).
