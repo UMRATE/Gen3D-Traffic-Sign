@@ -68,6 +68,11 @@ For a step-by-step guide, refer to the accompanying paper. As the manuscript is 
 
 ## Notes
 Due to GitHub's file size restrictions, Large files are hosted separately and will be accessible via a [cloud storage link](#) (to be updated).
+Licensing Notice
+Due to the licensing restrictions of Unity and Sketchfab, the 3D models used in this project cannot be redistributed in this repository, as doing so would violate the terms described at:
+https://unity.com/cn/legal/as-terms
+To obtain the original 3D models, please download them directly from Sketchfab:
+https://sketchfab.com/
 
 ## Contact
 For questions or contributions, feel free to open an issue or contact the repository maintainers.
