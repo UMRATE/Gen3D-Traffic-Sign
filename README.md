@@ -68,34 +68,38 @@ A complete step-by-step workflow for running the synthetic environment is summar
 
 1. Preparing the Virtual Environment
 To execute the DatasetGenerator scripts, a Unity project must be set up with a compatible 3D city model.
-  1. Create a new Unity project.
-  2. Import the city scene from the Sketchfab into Unity.
-  3. Import the DatasetGenerator folder from this repository into the Unity Assets/ directory.
-  4. Drag the DatasetGenerator scripts into the scene hierarchy.
-  5. Tag all road surfaces as Road to enable the automatic road-identification module.
-  6. Place the 3D traffic sign prefabs (from Sketchfab or your licensed sources) under a dedicated folder such as Assets/Signs/.
-Once this setup is complete, the generator will automatically:
-  1. Parse the road network
-  2. Place traffic signs following predefined rules
-  3. Deploy virtual cameras
-  4. Generate RGB images and segmentation masks using raycasting
 
-2. Running the DatasetGenerator
+   1. Create a new Unity project.
+   2. Import the city scene from the Sketchfab into Unity.
+   3. Import the DatasetGenerator folder from this repository into the Unity Assets/ directory.
+   4. Drag the DatasetGenerator scripts into the scene hierarchy.
+   5. Tag all road surfaces as Road to enable the automatic road-identification module.
+   6. Place the 3D traffic sign prefabs (from Sketchfab or your licensed sources) under a dedicated folder such as Assets/Signs/.
+
+Once this setup is complete, the generator will automatically:
+
+   1. Parse the road network
+   2. Place traffic signs following predefined rules
+   3. Deploy virtual cameras
+   4. Generate RGB images and segmentation masks using raycasting
+
+3. Running the DatasetGenerator
 After configuring the scene:
 Press Play.
 Unity will simulate the environment and continuously generate annotated images into the specified output directory.
 
-3. Training the Detection Model
+4. Training the Detection Model
 The exported synthetic dataset can then be used directly with YOLOv8.
 Annotation follows the standard YOLO format (class x_center y_center width height).
 Training scripts and configs are included in the training/ folder.
 
-4. 3D Reconstruction and Semantic Integration
+5. 3D Reconstruction and Semantic Integration
 Real-world UAV videos are processed via Metashape to reconstruct a dense point cloud.
 The YOLOv8 predictions are then projected into the 3D structure to produce a semantic point cloud, followed by:
-  1. Class refinement
-  2. 3D clustering
-  3. Sign localization
+
+   1. Class refinement
+   2. 3D clustering
+   3. Sign localization
 
 ## Notes
 Due to GitHub's file size restrictions, Large files are hosted separately and will be accessible via a [cloud storage link](#) (to be updated).
