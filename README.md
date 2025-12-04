@@ -79,10 +79,10 @@ A complete step-by-step workflow for running the synthetic environment is summar
    f. Place the 3D traffic sign prefabs (from Sketchfab or your licensed sources) under a dedicated folder such as Assets/Signs/.  
  
 2. **Once this setup is complete, the generator will automatically**  
-   a. Parse the road network
-   b. Place traffic signs following predefined rules
-   c. Deploy virtual cameras
-   d. Generate RGB images and segmentation masks using raycasting
+   a. Parse the road network  
+   b. Place traffic signs following predefined rules  
+   c. Deploy virtual cameras  
+   d. Generate RGB images and segmentation masks using raycasting  
 
 3. **Running the DatasetGenerator**  
    After configuring the scene:  
