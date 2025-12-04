@@ -70,7 +70,7 @@ This repository contains code for the proposed methodology, including:
 A complete step-by-step workflow for running the synthetic environment is summarized below. Full methodological details will be provided once the accompanying manuscript completes peer review.
 
 1. **Preparing the Virtual Environment**  
-   To execute the DatasetGenerator scripts, a Unity project must be set up with a compatible 3D city model.  
+   To execute the DatasetGenerator scripts, a Unity project must be set up with a compatible 3D city model：  
    a. Create a new Unity project.  
    b. Import the city scene from the Sketchfab into Unity.  
    c. Import the DatasetGenerator folder from this repository into the Unity Assets/ directory.  
@@ -86,8 +86,8 @@ A complete step-by-step workflow for running the synthetic environment is summar
 
 3. **Running the DatasetGenerator**  
    After configuring the scene:  
-   Press Play.  
-   Unity will simulate the environment and continuously generate annotated images into the specified output directory.
+   a. Press Play.  
+   b. Unity will simulate the environment and continuously generate annotated images into the specified output directory.
 
 4. **Training the Detection Model**  
    The exported synthetic dataset can then be used directly with YOLOv8.  
