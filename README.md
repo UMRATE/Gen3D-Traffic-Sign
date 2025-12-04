@@ -90,22 +90,22 @@ To execute the DatasetGenerator scripts, a Unity project must be set up with a c
 
 After configuring the scene:
 
-Press Play.
-Unity will simulate the environment and continuously generate annotated images into the specified output directory.
+   Press Play.  
+   Unity will simulate the environment and continuously generate annotated images into the specified output directory.
 
 4. **Training the Detection Model**:
 
-The exported synthetic dataset can then be used directly with YOLOv8.
-Annotation follows the standard YOLO format (class x_center y_center width height).
-Training scripts and configs are included in the training/ folder.
+   The exported synthetic dataset can then be used directly with YOLOv8.  
+   Annotation follows the standard YOLO format (class x_center y_center width height).  
+   Training scripts and configs are included in the training/ folder.  
 
 5. **3D Reconstruction and Semantic Integration**
 
-Real-world UAV videos are processed via Metashape to reconstruct a dense point cloud.
-The YOLOv8 predictions are then projected into the 3D structure to produce a semantic point cloud, followed by:
+   Real-world UAV videos are processed via Metashape to reconstruct a dense point cloud.  
+   The YOLOv8 predictions are then projected into the 3D structure to produce a semantic point cloud, followed by:
 
-   a. Class refinement
-   b. 3D clustering
+   a. Class refinement  
+   b. 3D clustering  
    c. Sign localization
 
 ## Notes
