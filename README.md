@@ -39,7 +39,7 @@ This repository contains code for the proposed methodology, including:
    b. Import the provided DatasetGenerator scripts.   
    c. Tag road objects as `Road` in the city scene.  
   
-  Run the scripts to:  
+   Run the scripts to:  
      - Identify roads and place traffic signs in a predefined order.  
      - Position cameras and generate mask images of the camera's field of view using raycasting.  
      - Output synthetic images with traffic sign annotations.  
