@@ -35,8 +35,8 @@ This repository contains code for the proposed methodology, including:
 ### Key Components
 1. **Traffic Sign Synthetic Dataset Generation**: The DatasetGenerator are written in **C#** and designed to run in a unreal engine. [Unity](https://unity.com/cn) was used in this study, specific steps are as follows:
 
-  a. Import the city scene (Fig 2) from the [Unity Asset Store](https://assetstore.unity.com/?srsltid=AfmBOopX2Y6pVpbDR0U101dbc8TpX8v4A-gY8tA5f4f-Qa6QdKLMuj3K)
-  b. Import the provided DatasetGenerator scripts.
+  a. Import the city scene (Fig 2) from the [Unity Asset Store](https://assetstore.unity.com/?srsltid=AfmBOopX2Y6pVpbDR0U101dbc8TpX8v4A-gY8tA5f4f-Qa6QdKLMuj3K)  
+  b. Import the provided DatasetGenerator scripts.  
   c. Tag road objects as `Road` in the city scene.
   
   Run the scripts to:
@@ -72,13 +72,13 @@ A complete step-by-step workflow for running the synthetic environment is summar
 1. **Preparing the Virtual Environment**:
 To execute the DatasetGenerator scripts, a Unity project must be set up with a compatible 3D city model.
 
-   a. Create a new Unity project.
-   b. Import the city scene from the Sketchfab into Unity.
-   c. Import the DatasetGenerator folder from this repository into the Unity Assets/ directory.
-   d. Drag the DatasetGenerator scripts into the scene hierarchy.
-   e. Tag all road surfaces as Road to enable the automatic road-identification module.
-   f. Place the 3D traffic sign prefabs (from Sketchfab or your licensed sources) under a dedicated folder such as Assets/Signs/.
-
+   a. Create a new Unity project.  
+   b. Import the city scene from the Sketchfab into Unity.  
+   c. Import the DatasetGenerator folder from this repository into the Unity Assets/ directory.  
+   d. Drag the DatasetGenerator scripts into the scene hierarchy.  
+   e. Tag all road surfaces as Road to enable the automatic road-identification module.  
+   f. Place the 3D traffic sign prefabs (from Sketchfab or your licensed sources) under a dedicated folder such as Assets/Signs/.  
+ 
 2. **Once this setup is complete, the generator will automatically**:
 
    a. Parse the road network
