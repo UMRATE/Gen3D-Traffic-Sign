@@ -35,15 +35,14 @@ This repository contains code for the proposed methodology, including:
 ### Key Components
 1. **Traffic Sign Synthetic Dataset Generation**: The DatasetGenerator are written in **C#** and designed to run in a unreal engine. [Unity](https://unity.com/cn) was used in this study, specific steps are as follows:
 
-  a. Import the city scene (Fig 2) from the [Unity Asset Store](https://assetstore.unity.com/?srsltid=AfmBOopX2Y6pVpbDR0U101dbc8TpX8v4A-gY8tA5f4f-Qa6QdKLMuj3K)  
-  b. Import the provided DatasetGenerator scripts.  
-  c. Tag road objects as `Road` in the city scene.
+   a. Import the city scene (Fig 2) from the [Unity Asset Store](https://assetstore.unity.com/?srsltid=AfmBOopX2Y6pVpbDR0U101dbc8TpX8v4A-gY8tA5f4f-Qa6QdKLMuj3K)  
+   b. Import the provided DatasetGenerator scripts.   
+   c. Tag road objects as `Road` in the city scene.  
   
-  Run the scripts to:
-  
-    - Identify roads and place traffic signs in a predefined order.
-    - Position cameras and generate mask images of the camera's field of view using raycasting.
-    - Output synthetic images with traffic sign annotations.
+  Run the scripts to:  
+     - Identify roads and place traffic signs in a predefined order.  
+     - Position cameras and generate mask images of the camera's field of view using raycasting.  
+     - Output synthetic images with traffic sign annotations.  
 
 3. **Model Training**:
   The generated synthetic dataset can be used to train the **YOLOv8** model. Refer to the official website: [ultralytics YOLO Vision](https://docs.ultralytics.com/zh).
