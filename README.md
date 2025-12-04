@@ -66,7 +66,7 @@ This repository contains code for the proposed methodology, including:
 ### Detailed Workflow
 A complete step-by-step workflow for running the synthetic environment is summarized below. Full methodological details will be provided once the accompanying manuscript completes peer review.
 
-1.Preparing the Virtual Environment
+1. **Preparing the Virtual Environment**:
 To execute the DatasetGenerator scripts, a Unity project must be set up with a compatible 3D city model.
 
    a. Create a new Unity project.
@@ -76,24 +76,24 @@ To execute the DatasetGenerator scripts, a Unity project must be set up with a c
    e. Tag all road surfaces as Road to enable the automatic road-identification module.
    f. Place the 3D traffic sign prefabs (from Sketchfab or your licensed sources) under a dedicated folder such as Assets/Signs/.
 
-2.Once this setup is complete, the generator will automatically:
+2. **Once this setup is complete, the generator will automatically**:
 
    a. Parse the road network
    b. Place traffic signs following predefined rules
    c. Deploy virtual cameras
    d. Generate RGB images and segmentation masks using raycasting
 
-3.Running the DatasetGenerator
+3. **Running the DatasetGenerator**:
 After configuring the scene:
 Press Play.
 Unity will simulate the environment and continuously generate annotated images into the specified output directory.
 
-4.Training the Detection Model
+4. **Training the Detection Model**
 The exported synthetic dataset can then be used directly with YOLOv8.
 Annotation follows the standard YOLO format (class x_center y_center width height).
 Training scripts and configs are included in the training/ folder.
 
-5.3D Reconstruction and Semantic Integration
+5. **3D Reconstruction and Semantic Integration**
 Real-world UAV videos are processed via Metashape to reconstruct a dense point cloud.
 The YOLOv8 predictions are then projected into the 3D structure to produce a semantic point cloud, followed by:
 
