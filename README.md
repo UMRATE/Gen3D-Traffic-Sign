@@ -34,7 +34,7 @@ This repository contains code for the proposed methodology, including:
 
 ### Key Components
 1. **Traffic Sign Synthetic Dataset Generation**: The DatasetGenerator are written in **C#** and designed to run in a unreal engine. [Unity](https://unity.com/cn) was used in this study, specific steps are as follows:  
-   a. Import the city scene (Fig 2) from the [Unity Asset Store](https://assetstore.unity.com/?srsltid=AfmBOopX2Y6pVpbDR0U101dbc8TpX8v4A-gY8tA5f4f-Qa6QdKLMuj3K)  
+   a. Import the city scene (Fig 2) from the [Sketchfab]([https://assetstore.unity.com/?srsltid=AfmBOopX2Y6pVpbDR0U101dbc8TpX8v4A-gY8tA5f4f-Qa6QdKLMuj3K](https://sketchfab.com/))  
    b. Import the provided DatasetGenerator scripts.   
    c. Tag road objects as `Road` in the city scene.
    
