@@ -5,7 +5,7 @@
 - [Repository Contents](#repository-contents)
   - [Key Components](#key-components)
   - [Detailed Workflow](#detailed-workflow)
-- [Notes](#notes)
+- [Licensing Notice](#Licensing Notice)
 - [Contact](#contact)
 
 ## Overview
