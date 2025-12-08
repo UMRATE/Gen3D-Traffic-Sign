@@ -99,12 +99,8 @@ A complete step-by-step workflow for running the synthetic environment is summar
    b. 3D clustering  
    c. Sign localization
 
-## Notes
-Due to GitHub's file size restrictions, Large files are hosted separately and will be accessible via a [cloud storage link](#) (to be updated).
-
 ## Licensing Notice
-Due to the licensing restrictions of Unity and Sketchfab, the 3D models used in this project cannot be redistributed in this repository, as doing so would violate the terms described at:
-https://unity.com/cn/legal/as-terms
+Due to the licensing restrictions of Unity and Sketchfab, the 3D models used in this project cannot be redistributed in this repository.
 To obtain the original 3D models, please download them directly from Sketchfab:
 https://sketchfab.com/
 
